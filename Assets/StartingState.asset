@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2762acc62a1703449b2022052966d8b0, type: 3}
+  m_Name: StartingState
+  m_EditorClassIdentifier: 
+  storyText: 'Greetings Detective Anderson,
+
+
+    You have been tasked with investigating a missing persons case that occured in
+    the small town of Sheridan Lake. As you know the first 48 hours of a missing persons
+    investigation is the most crucial. Keeping that in mind you are free to investigate
+    this cast as you see fit. Will you?
+
+
+    1. Check in with the local SL Police Department?
+
+    2. Review the facts of the case?'
+  nextStates:
+  - {fileID: 11400000, guid: 472d9115a20b100478dec1e1247902f9, type: 2}
+  - {fileID: 11400000, guid: d8c2b95af343dfa4b947497bbc5f9837, type: 2}

@@ -19,7 +19,7 @@ public class State : ScriptableObject {
         return nextStates;
     }
 
-    public int GetQjuizScore()
+    public int GetQuizScore()
     {
         return currentQuizScore;
     }

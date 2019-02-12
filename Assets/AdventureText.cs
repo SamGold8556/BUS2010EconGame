@@ -23,19 +23,37 @@ public class AdventureText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ManageStates();
+        // ManageStates();
+        
     }
 
-    private void ManageStates()
+    public void answerOne()
     {
         var nextStates = state.GetNextState();
+        state = nextStates[0];
+        textComponent.text = state.GetStateStory();
+        Debug.Log("Answer One Pressed");
+
+    }
+
+    public void answerTwo()
+    {
+        var nextStates = state.GetNextState();
+        state = nextStates[1];
+        textComponent.text = state.GetStateStory();
+        Debug.Log("Answer Two Pressed");
+    }
+    private void ManageStates()
+    {
+        /*var nextStates = state.GetNextState();
         for (int i = 0; i < nextStates.Length; i++)
         {
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))
             {
                 state = nextStates[i];
             }
-        }
+        }*/
+
 
         textComponent.text = state.GetStateStory();
     }
